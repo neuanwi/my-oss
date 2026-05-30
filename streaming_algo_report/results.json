@@ -1,0 +1,115 @@
+{
+  "dataset": {
+    "records": 200000,
+    "unique_pages": 7978,
+    "unique_users": 24991
+  },
+  "bloom": {
+    "n_inserted": 19992,
+    "n_heldout": 4999,
+    "exact_set_bytes": 1048792,
+    "sweep": [
+      {
+        "fp_target": 0.1,
+        "m_bits": 95813,
+        "k": 3,
+        "struct_bytes": 11977,
+        "peak_mem_bytes": 467,
+        "build_time_s": 0.26878371499999787,
+        "throughput": 74379.5062137606,
+        "observed_fp_rate": 0.10842168433686737,
+        "false_negatives": 0
+      },
+      {
+        "fp_target": 0.05,
+        "m_bits": 124655,
+        "k": 4,
+        "struct_bytes": 15582,
+        "peak_mem_bytes": 499,
+        "build_time_s": 0.30681601199999875,
+        "throughput": 65159.57191960399,
+        "observed_fp_rate": 0.053610722144428885,
+        "false_negatives": 0
+      },
+      {
+        "fp_target": 0.01,
+        "m_bits": 191625,
+        "k": 7,
+        "struct_bytes": 23954,
+        "peak_mem_bytes": 627,
+        "build_time_s": 0.44621430199998713,
+        "throughput": 44803.58408592779,
+        "observed_fp_rate": 0.007801560312062412,
+        "false_negatives": 0
+      },
+      {
+        "fp_target": 0.001,
+        "m_bits": 287437,
+        "k": 10,
+        "struct_bytes": 35930,
+        "peak_mem_bytes": 787,
+        "build_time_s": 0.5868804609999927,
+        "throughput": 34064.85873790276,
+        "observed_fp_rate": 0.000600120024004801,
+        "false_negatives": 0
+      }
+    ]
+  },
+  "cms": {
+    "exact_dict_bytes": 207616,
+    "sweep": [
+      {
+        "eps": 0.01,
+        "delta": 0.01,
+        "width": 272,
+        "depth": 5,
+        "struct_bytes": 10880,
+        "peak_mem_bytes": 86451,
+        "build_time_s": 9.53159709499998,
+        "throughput": 20982.84243517958,
+        "mean_rel_err": 49.25431511929435,
+        "max_rel_err": 547.0,
+        "top100_rel_err": 0.7835271154392026
+      },
+      {
+        "eps": 0.001,
+        "delta": 0.01,
+        "width": 2719,
+        "depth": 5,
+        "struct_bytes": 108760,
+        "peak_mem_bytes": 61747,
+        "build_time_s": 9.897902493000004,
+        "throughput": 20206.301298830134,
+        "mean_rel_err": 1.4585587210200468,
+        "max_rel_err": 38.0,
+        "top100_rel_err": 0.02426864819161344
+      },
+      {
+        "eps": 0.0005,
+        "delta": 0.01,
+        "width": 5437,
+        "depth": 5,
+        "struct_bytes": 217480,
+        "peak_mem_bytes": 60307,
+        "build_time_s": 9.929620947000018,
+        "throughput": 20141.75576968272,
+        "mean_rel_err": 0.2844698042761718,
+        "max_rel_err": 21.0,
+        "top100_rel_err": 0.005838919310766156
+      },
+      {
+        "eps": 0.0001,
+        "delta": 0.01,
+        "width": 27183,
+        "depth": 5,
+        "struct_bytes": 1087320,
+        "peak_mem_bytes": 58835,
+        "build_time_s": 10.145595923000002,
+        "throughput": 19712.98694703593,
+        "mean_rel_err": 0.0002235848603201505,
+        "max_rel_err": 0.5714285714285714,
+        "top100_rel_err": 0.0
+      }
+    ]
+  }
+}
